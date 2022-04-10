@@ -34,15 +34,3 @@ jobs:
           issue_number: ${{ steps.processor.outputs.issue_number }}
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
-      - name: 'Send telegram message'
-        uses: appleboy/telegram-action@master
-        if: |
-          steps.processor.outputs.issue_number != 0 &&
-          secrets.TELEGRAM_TO != '' &&
-          secrets.TELEGRAM_TOKEN != ''
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            Hi, I have posted issue to Steem.
-            https://github.com/${{ github.repository }}/issues/${{ steps.processor.outputs.issue_number }}

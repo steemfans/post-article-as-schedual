@@ -1,9 +1,9 @@
 ---
 name: Post Article to Steem as Schedual
+about: Post Article to Steem as Schedual
 title: ''
 labels: ''
 assignees: ''
-
 ---
 <!-- Please remove this line.
 ---

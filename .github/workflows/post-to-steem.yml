@@ -1,0 +1,48 @@
+name: 'Post to Steem Schedual'
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  post_to_steem:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Processor'
+        id: 'processor'
+        uses: 'steemfans/process-issues-for-posting-to-steem-action@master'
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          tz: '${{ secrets.TZ }}'
+      - name: 'Post to Steem'
+        id: post
+        uses: 'steemfans/post-to-steem-action@master'
+        if: steps.processor.outputs.issue_number != 0
+        with:
+          posting_key: ${{ secrets.POSTING_KEY }}
+          title: ${{ steps.processor.outputs.title }}
+          author: ${{ secrets.USERNAME }}
+          tags: ${{ steps.processor.outputs.tags }}
+          content: ${{ steps.processor.outputs.content }}
+          reward: ${{ steps.processor.outputs.reward }}
+      - name: 'Close Issue'
+        uses: 'steemfans/process-issues-for-posting-to-steem-action@master'
+        if: steps.processor.outputs.issue_number != 0
+        with:
+          issue_number: ${{ steps.processor.outputs.issue_number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+      - name: 'Send telegram message'
+        uses: appleboy/telegram-action@master
+        if: |
+          steps.processor.outputs.issue_number != 0 &&
+          secrets.TELEGRAM_TO != '' &&
+          secrets.TELEGRAM_TOKEN != ''
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            Hi, I have posted issue to Steem.
+            https://github.com/${{ github.repository }}/issues/${{ steps.processor.outputs.issue_number }}

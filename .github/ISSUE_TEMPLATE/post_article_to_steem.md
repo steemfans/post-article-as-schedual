@@ -1,6 +1,5 @@
 ---
-name: post_article_to_steem
-about: Post article to Steem
+name: Post Article to Steem as Schedual
 title: ''
 labels: ''
 assignees: ''

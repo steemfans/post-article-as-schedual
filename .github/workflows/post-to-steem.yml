@@ -46,7 +46,7 @@ jobs:
         uses: appleboy/telegram-action@master
         if: |
           steps.processor.outputs.issue_number != 0 &&
-          steps.check_telegram.outputs.is_telegram_set
+          steps.check_telegram.outputs.is_telegram_set != false
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}

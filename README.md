@@ -1,6 +1,6 @@
 # Post Article as Schedual to Steem
 
-1. Fork this repo
+1. Fork this repo [https://github.com/steemfans/post-article-as-schedual](https://github.com/steemfans/post-article-as-schedual).
 2. After forked, go to your forked repo's **Settings** panel.
 3. In the **General** settings, enable **Issues** in **Features**.
 4. Then on the left side, click **Secrets** -> **Actions** -> **New repository secret**. Here, you need set three key-value pairs.
@@ -12,6 +12,18 @@
 7. Now you can add issue to schedual your posting action. There is an issue template you could reference.
 
 > **Attention! The github action schedual is not precision because of the huge queued jobs on all Github platform.**
+
+# Issue Template
+
+```
+---
+title: Your article title
+tags: Your article tags, example: tag1,tag2,tag3
+reward: Detail instruction is here ([https://github.com/steemfans/post-to-steem-action#reward](https://github.com/steemfans/post-to-steem-action#reward))
+date: Your schedual posting date. The format MUST be *YYYY-MM-DD hh:mm:ss*, example: 2022-04-01 00:01:10
+---
+Your article content starts here.
+```
 
 # Other Thing
 
@@ -30,7 +42,7 @@ or use direct link to vote:
 
 # 按照计划发文到 Steem
 
-1. 克隆这个仓库
+1. 克隆这个仓库 [https://github.com/steemfans/post-article-as-schedual](https://github.com/steemfans/post-article-as-schedual).
 2. 克隆完成后, 进入你克隆的仓库的 **Settings** 面板.
 3. 在 **General** 中, 找到 **Features**, 启用 **Issues**.
 4. 在左边栏, 依次点击 **Secrets** -> **Actions** -> **New repository secret**. 在这里, 你需要添加三组 key-value 对.
@@ -42,6 +54,18 @@ or use direct link to vote:
 7. 现在你可以添加 issue 来安排你的发文计划了. 在添加新的 issue 的时候，会有一个模板供你参考.
 
 > **注意! Github action 由于使用的人太多, 他的计划任务的时间并不精确.**
+
+# Issue 模板
+
+```
+---
+title: Your article title
+tags: Your article tags, example: tag1,tag2,tag3
+reward: Detail instruction is here ([https://github.com/steemfans/post-to-steem-action#reward](https://github.com/steemfans/post-to-steem-action#reward))
+date: Your schedual posting date. The format MUST be *YYYY-MM-DD hh:mm:ss*, example: 2022-04-01 00:01:10
+---
+Your article content starts here.
+```
 
 # 其他
 

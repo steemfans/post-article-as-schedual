@@ -5,12 +5,12 @@ title: ''
 labels: ''
 assignees: ''
 ---
-<!-- Please remove this line.
+<!-- Please remove this line. Document: https://github.com/steemfans/post-article-as-schedual/blob/master/README.md#issue-template
 ---
 title: Your article title
-tags: Your article tags, example: tag1,tag2,tag3
-reward: Detail instruction is here (https://github.com/steemfans/post-to-steem-action#reward)
-date: Your schedual posting date. The format MUST be *YYYY-MM-DD hh:mm:ss*, example: 2022-04-01 00:01:10
+tags: tag1,tag2
+reward: 50
+date: 2022-04-01 00:01:10
 ---
 Your article content starts here.
 

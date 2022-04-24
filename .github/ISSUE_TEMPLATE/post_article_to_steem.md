@@ -5,7 +5,7 @@ title: ''
 labels: ''
 assignees: ''
 ---
-<!-- Please remove this line. Document: [https://github.com/steemfans/post-article-as-schedual/blob/master/README.md#issue-template](https://github.com/steemfans/post-article-as-schedual/blob/master/README.md#issue-template)
+<!-- Please remove this line. Document: https://github.com/steemfans/post-article-as-schedual/blob/master/README.md#issue-template
 ---
 title: Your article title
 tags: tag1,tag2

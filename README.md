@@ -1,6 +1,6 @@
 # Post Article as Schedual to Steem
 
-1. Fork this repo
+1. Fork this repo [https://github.com/steemfans/post-article-as-schedual](https://github.com/steemfans/post-article-as-schedual).
 2. After forked, go to your forked repo's **Settings** panel.
 3. In the **General** settings, enable **Issues** in **Features**.
 4. Then on the left side, click **Secrets** -> **Actions** -> **New repository secret**. Here, you need set three key-value pairs.
@@ -42,7 +42,7 @@ or use direct link to vote:
 
 # 按照计划发文到 Steem
 
-1. 克隆这个仓库
+1. 克隆这个仓库 [https://github.com/steemfans/post-article-as-schedual](https://github.com/steemfans/post-article-as-schedual).
 2. 克隆完成后, 进入你克隆的仓库的 **Settings** 面板.
 3. 在 **General** 中, 找到 **Features**, 启用 **Issues**.
 4. 在左边栏, 依次点击 **Secrets** -> **Actions** -> **New repository secret**. 在这里, 你需要添加三组 key-value 对.

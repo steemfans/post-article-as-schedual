@@ -43,7 +43,6 @@ jobs:
             echo "is_telegram_set: ${{ env.TELEGRAM_TO != '' && env.TELEGRAM_TOKEN != '' }}"
             echo "::set-output name=is_telegram_set::${{ env.TELEGRAM_TO != '' && env.TELEGRAM_TOKEN != '' }}"
       - name: 'Send telegram message'
-        uses: appleboy/telegram-action@master
         if: |
           steps.processor.outputs.issue_number != 0 &&
           steps.check_telegram.outputs.is_telegram_set != 'false'

@@ -47,9 +47,11 @@ jobs:
         if: |
           steps.processor.outputs.issue_number != 0 &&
           steps.check_telegram.outputs.is_telegram_set != 'false'
-        with:
+        env:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
             Hi, I have posted the issue to Steem.
             https://github.com/${{ github.repository }}/issues/${{ steps.processor.outputs.issue_number }}
+        run: |
+          curl  -s --data-urlencode "text=${message}" https://api.telegram.org/bot${token}/sendMessage?chat_id=${to}

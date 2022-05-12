@@ -24,6 +24,10 @@ date: Your schedual posting date. The format MUST be *YYYY-MM-DD hh:mm:ss*, exam
 Your article content starts here.
 ```
 
+# Video Tutorial
+
+[![The tutorial of how to use Post-Article-as-Schedual tool](https://i.ytimg.com/vi/AXPfPiPQVJg/hqdefault.jpg)](https://www.youtube.com/watch?v=AXPfPiPQVJg)
+
 # Other Thing
 
 Any question, please feel free to create an issue on here
@@ -65,6 +69,10 @@ date: Your schedual posting date. The format MUST be *YYYY-MM-DD hh:mm:ss*, exam
 Your article content starts here.
 ```
 
+# 视频教程
+
+[![The tutorial of how to use Post-Article-as-Schedual tool](https://i.ytimg.com/vi/AXPfPiPQVJg/hqdefault.jpg)](https://www.youtube.com/watch?v=AXPfPiPQVJg)
+
 # 其他
 
 如果有任何问题，请到这里提交 issue
@@ -76,3 +84,4 @@ Your article content starts here.
 
 或者你也可以直接使用下面的链接进行投票:
 [https://auth.steem.fans/sign/account_witness_vote?approve=1&witness=ety001](https://auth.steem.fans/sign/account_witness_vote?approve=1&witness=ety001)
+

@@ -1,9 +1,10 @@
 # Post Article as Schedual to Steem
 
 1. Open this repo [https://github.com/steemfans/post-article-as-schedual](https://github.com/steemfans/post-article-as-schedual).
-2. Click **Use this template** button.
-3. Write a name for your repo.
-4. Then open the repo settings and click **Secrets** -> **Actions** -> **New repository secret**. Here, you need set three key-value pairs. 
+2. Click **Use this template** button. Write a name for your repo.
+3. Then open the repo settings and find **Workflow permissions** part. Select **Read and write permissions** and **Save**.
+4. On the left panel in settings page, click **Secrets** -> **Actions** -> **New repository secret**. 
+Here, you need set three key-value pairs. 
  * **USERNAME**: This is your steem account name.
  * **POSTING_KEY**: This is your steem account posting key.
  * **TZ**: This is your local timezone. example: Asia/Shanghai. Please refer to this: [https://timezonedb.com/time-zones](https://timezonedb.com/time-zones).
@@ -41,9 +42,10 @@ or use direct link to vote:
 # 按照计划发文到 Steem
 
 1. 访问这个仓库 [https://github.com/steemfans/post-article-as-schedual](https://github.com/steemfans/post-article-as-schedual).
-2. 点击 **Use this template** 按钮.
-3. 给你的这个仓库起个名字，然后创建.
-4. 打开这个仓库的 Settings 页面, 依次点击 **Secrets** -> **Actions** -> **New repository secret**. 在这里, 你需要添加三组 key-value 对. 
+2. 点击 **Use this template** 按钮. 给你的这个仓库起个名字，然后创建.
+3. 打开这个仓库的 Settings 页面，找到 **Workflow permissions** 部分，选择 **Read and write permissions** 并 **Save**.
+4. 在 Settings 页面左边栏, 依次点击 **Secrets** -> **Actions** -> **New repository secret**. 在这里, 
+你需要添加三组 key-value 对. 
  * **USERNAME**: 你的 Steem 用户名.
  * **POSTING_KEY**: 你的 Steem 账户的 Posting Key.
  * **TZ**: 你的当地时区. 例如: Asia/Shanghai. 具体可以参考这里: [https://timezonedb.com/time-zones](https://timezonedb.com/time-zones)

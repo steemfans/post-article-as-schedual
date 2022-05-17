@@ -71,7 +71,7 @@ Your article content starts here.
 
 # 视频教程
 
-[![The tutorial of how to use Post-Article-as-Schedual tool](https://i.ytimg.com/vi/AXPfPiPQVJg/hqdefault.jpg)](https://www.bilibili.com/video/BV1zv4y1N7PE?share_source=copy_web)
+[![The tutorial of how to use Post-Article-as-Schedual tool](https://i.ytimg.com/vi/AXPfPiPQVJg/hqdefault.jpg)](https://www.bilibili.com/video/BV1zv4y1N7PE/)
 
 # 其他
 

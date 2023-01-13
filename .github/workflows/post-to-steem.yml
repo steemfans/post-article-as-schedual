@@ -41,7 +41,7 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         run: |
             echo "is_telegram_set: ${{ env.TELEGRAM_TO != '' && env.TELEGRAM_TOKEN != '' }}"
-            echo "::set-output name=is_telegram_set::${{ env.TELEGRAM_TO != '' && env.TELEGRAM_TOKEN != '' }}"
+            echo "is_telegram_set=${{ env.TELEGRAM_TO != '' && env.TELEGRAM_TOKEN != '' }}" >> $GITHUB_OUTPUT
       - name: 'Send telegram message'
         if: |
           steps.processor.outputs.issue_number != 0 &&
